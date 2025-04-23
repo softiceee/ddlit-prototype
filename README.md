@@ -11,6 +11,14 @@ Install Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 Install VS Code (RRZ Softwareverwaltung oder direkt auf deren Webseite: https://code.visualstudio.com/download)
 
+#### macOS
+
+Install [Homebrew](https://brew.sh/) (Package Manager for macOS):
+```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+
+Install Hugo: `brew install hugo`
+Install Git: `brew install git`
+
 ### Setting up the local repository
 
 Open a terminal inside VS Code.
