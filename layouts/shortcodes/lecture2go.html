@@ -1,0 +1,8 @@
+<iframe 
+  src='https://lecture2go.uni-hamburg.de/o/iframe/?obj={{ .Get "id" }}{{ if eq (.Get "series") "true" }}&series=true{{ end }}' 
+  title='{{ if .Get "title" }}{{ .Get "title" }}{{ else }}Video from Lecture2Go{{ end }}' 
+  frameborder='0' 
+  width='{{ if .Get "width" }}{{ .Get "width" }}{{ else }}647{{ end }}' 
+  height='{{ if .Get "height" }}{{ .Get "height" }}{{ else }}373{{ end }}' 
+  allowfullscreen>
+</iframe>

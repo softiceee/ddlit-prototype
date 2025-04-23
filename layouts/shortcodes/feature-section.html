@@ -1,0 +1,17 @@
+{{ $features := .Get "features" }}
+
+<section class="section section--grey">
+  <div class="container">
+    <div class="columns is-multiline">
+      {{ range $features }}
+      <div class="column is-4">
+        <div class="feature">
+          <div class="feature__icon"><i class="fa {{ .icon }}"></i></div>
+          <h4 class="feature__title">{{ .title }}</h4>
+          <p class="feature__description">{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
