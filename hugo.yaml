@@ -14,7 +14,7 @@ googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX fo
 # Disables warnings
 disableKinds:
 - taxonomy
-- taxonomyTerm
+# - taxonomyTerm
 markup:
   goldmark:
     renderer:
@@ -33,11 +33,11 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    image: logo.png
     link: /
     # Default width/height. Uncomment if you need to change
-    # width: 112
-    # height: 28
+    width: 50
+    height: 50
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -67,61 +67,16 @@ params:
     #   url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Ringvorlesung Datenwelten
+  - title: Datenwelten
     url: /datenwelten/
-  - title: Studierendenprojekte
-    url: /studiprojekte/
-  - title: Dropdown
-    sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
   - title: Lehrlabore
     url: /lehrlabore/
-  #- title: About
-  #  url: /about/
-  #- title: Sign up
-  #  url: /
-  #  button: true
-  - title: Team
-    url: /team/
-  sidebar:
-    # Logo (from static/images/logos/___.svg)
-    logo: fresh-square
-    sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
+  - title: Studi-Projekte
+    url: /studi-projekte/
+  - title: gKI-Community
+    url: /gki-community/
+  - title: Über Uns
+    url: /about/
   section1:
     title: Great power comes
     subtitle: with great responsibility
@@ -190,52 +145,40 @@ params:
     # method: POST
   footer:
     # Logo (from static/images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: logo.png
+    # link: /
+    # height: 100
+    # wdith: 100
     # Social Media Title
-    socialmediatitle: Follow Us
+    socialmediatitle: Links
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/StefMa
+    - link: https://github.com/ddlitlab
       # Icons are from Font Awesome
       icon: github
-    - link: https://dribbble.com/#
+    - link: https://github.com/ddlitlab
       icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/StefMa91
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Product"
+        title: "Projects"
         links:
-        - text: Discover features
+        - text: Datenwelten
+          link: /datenwelten/
+        - text: Lehrlabore
+          link: /lehrlabore/
+        - text: Studi-Projekte
+          link: /studiprojekte/
+        - text: gKI-Community
           link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
       column2:
-        title: "Docs"
+        title: "About"
         links:
-        - text: Get started
+        - text: Über Uns
+          link: /about/
+        - text: Publications
+          link: /about/
+        - text: Impressum
+          link: /impressum/
+        - text: Github Repository
           link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
-      column3:
-        title: "Blog"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
