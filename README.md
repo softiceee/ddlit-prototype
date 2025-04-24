@@ -2,6 +2,12 @@
 
 Link: https://softiceee.github.io/ddlit-prototype/
 
+## Colors
+
+<div style="width: 100px; height: 100px; background-color: #FF5733; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+  #FF5733
+</div>
+
 ## Getting Started
 
 ### Installations
