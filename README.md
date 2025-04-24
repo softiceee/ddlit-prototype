@@ -4,7 +4,7 @@ Link: https://softiceee.github.io/ddlit-prototype/
 
 ## Colors
 
-![Colors](meta/colors.png)
+![Colors](static/meta/colors.png)
 
 ## Getting Started
 
