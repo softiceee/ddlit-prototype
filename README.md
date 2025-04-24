@@ -4,6 +4,12 @@ Link: https://softiceee.github.io/ddlit-prototype/
 
 ## Colors
 
+- c2c747
+- e68935
+- 74c5c9
+- 355e9c
+- 22366f
+
 ![Colors](static/meta/colors.png)
 
 ## Getting Started
