@@ -7,6 +7,38 @@ include_footer: true # or false to display the footer
 
 # Header
 
+{{< stat-counters 
+    bgcolor="primary" 
+    textcolor="white"
+    iconpath="/icons/"
+    items="[
+      {
+        'prefix': 'OVER',
+        'number': '2400',
+        'text': 'STUDENTS',
+        'icon': 'codicons/cap-graduation-hat-svgrepo-com.svg',
+        'iconAlt': 'graduation'
+      },
+      {
+        'prefix': 'FROM',
+        'number': '210',
+        'text': 'SUBJECTS',
+        'icon': 'idea-light-lightbulb-svgrepo-com.svg',
+        'iconAlt': 'lightbulb'
+      },
+      {
+        'prefix': 'BY',
+        'number': '27',
+        'text': 'LECTURERS',
+        'icon': 'record-speaker-microphone-svgrepo-com.svg',
+        'iconAlt': 'Lecturer'
+      }
+    ]"
+>}}
+
+
+
+
 {{< page_top_left 
   image="images/image_david.png" 
   heading="Hier steht eine sprechende Überschrift über einen wichtigen Impact oder Anlass dieses Angebots" 
