@@ -1,7 +1,9 @@
-{{ $items := .Params.items }}
-{{ $bgColor := .Params.bgcolor | default "primary" }}
-{{ $textColor := .Params.textcolor | default "secondary" }}
-{{ $iconPath := .Params.iconpath | default "/icons/" }}
+{{ $bgColor := .Get "bgcolor" | default "primary" }}
+{{ $textColor := .Get "textcolor" | default "secondary" }}
+{{ $iconPath := .Get "iconpath" | default "/icons/" }}
+{{ $jsonFile := .Get "datafile" | default "statcounters/stats1" }}
+{{ $items := index site.Data $jsonFile }}
+
 
 <div class="stat-counters has-text-centered py-6 has-background-{{ $bgColor }}">
   <div class="container">
@@ -17,7 +19,7 @@
                 <span>{{ $item.prefix }}</span>
                 <span class="is-size-2">{{ $item.number }}</span>
               </div>
-              <div class="is-size-3 has-text-{{ $textColor }}">{{ $item.text }}</div>
+              <div class="is-size-2 has-text-{{ $textColor }}">{{ $item.text }}</div>
             </div>
             {{ if eq (mod $index 2) 0 }}<div>
               <img src="{{ $iconPath }}{{ $item.icon }}" alt="{{ $item.iconAlt }}" width="64">
