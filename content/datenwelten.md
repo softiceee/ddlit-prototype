@@ -7,6 +7,8 @@ include_footer: true # or false to display the footer
 
 # Ringvorlesung Datenwelten
 
+commit directly on github
+
 {{< lecture2go id="70078" series="true" title="Datenwelten I: Einführung in Data Science" width="800" height="450" >}}
 
 <div class="columns">
