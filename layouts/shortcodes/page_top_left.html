@@ -1,0 +1,26 @@
+{{/* page_top_left.html shortcode */}}
+{{ $image := .Get "image" | default "images/placeholder-image.jpg" }}
+{{ $heading := .Get "heading" | default "Default Heading" }}
+{{ $text := .Get "text" | default "Default paragraph text" }}
+
+<section class="section is-small">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <!-- Image column on the left -->
+      <div class="column is-5">
+        <figure class="image">
+          <img src="{{ $image | relURL }}" alt="Image">
+        </figure>
+      </div>
+      
+      <!-- Content column on the right -->
+      <div class="column is-7">
+        <h1 class="title is-3">{{ $heading }}</h1>
+        
+        <div class="content">
+          <p class="is-size-5">{{ $text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
