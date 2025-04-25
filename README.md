@@ -29,9 +29,24 @@ Open a Terminal.
 * Install Hugo: `brew install hugo`
 * Install Git: `brew install git`
 
+#### Windows
+
+* Install [Git](https://git-scm.com/download/win)
+* Install Hugo. Follow these instructions: https://gohugo.io/installation/windows/#prebuilt-binaries
+    * Download the latest version of Hugo Extended for Windows from the [Release page](https://github.com/gohugoio/hugo/releases/latest). The file should be named something like `hugo_extended_version-number_windows-amd64.zip`.
+    * Unzip the downloaded file and move the `hugo.exe` file to a directory that is in your system's PATH. For example, you can create a new folder inside your home directory called `code` (this is where you will store your code repositories and hugo). Inside this new folder, create another folder called `bin` and move the `hugo.exe` file there. The full path to the file should look like this: `C:\Users\<YourUsername>\code\bin\hugo.exe`.
+    * Add the `bin` folder to your system's PATH. To do this, follow these steps:
+        1. Press Win + S and type "Environment Variables", then open "Edit the system environment variables".
+        2. Click "Environment Variables...".
+        3. In the "User variables" or "System variables" section (depending on scope), find the PATH variable and click Edit.
+        4. Click "New" and add the path to your `bin` folder (e.g., `C:\Users\<YourUsername>\code\bin`).
+        5. Click "OK" to close all dialog boxes.
+
+Now you can access Hugo and Git from any terminal window.
+
 ### Setting up the local repository
 
-Open a terminal inside VS Code (Terminal > New Terminal).
+First, Open VS Code. Then, open a terminal window (Terminal > New Terminal).
 
 Switch to a directory where you want to store your code (e.g. `~/code`)
 
