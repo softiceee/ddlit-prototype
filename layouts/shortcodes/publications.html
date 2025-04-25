@@ -1,0 +1,15 @@
+<div class="box">
+    {{ $pubs := .Site.Data.publications }}
+    <ul>
+      {{ range $pubs }}
+        <li>
+          <strong>{{ .title }}</strong><br>
+          <em>{{ .author }}</em><br>
+          <a href="https://doi.org/{{ .doi }}" target="_blank">DOI: {{ .doi }}</a><br>
+          <small>{{ .note }}</small><br>
+          <small>{{ slicestr .date 0 4 }}</small>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+  
