@@ -2,13 +2,31 @@
     {{ $pubs := .Site.Data.publications }}
     <ul>
       {{ range $pubs }}
-        <li>
-          <strong>{{ .title }}</strong><br>
-          <em>{{ .author }}</em><br>
-          <a href="https://doi.org/{{ .doi }}" target="_blank">DOI: {{ .doi }}</a><br>
-          <small>{{ .note }}</small><br>
-          <small>{{ slicestr .date 0 4 }}</small>
-        </li>
+
+      <div class="box">
+
+      <div class="columns">
+        <div class="column">
+          <strong>{{ .title }}</strong>
+        </div>
+      </div>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <em>{{ .author }}</em>
+        </div>
+        <div class="column">
+            <a href="https://doi.org/{{ .doi }}" target="_blank">DOI: {{ .doi }}</a>
+        </div>
+        <div class="column">
+            <small>{{ .note }}</small>
+        </div>
+        <div class="column">
+            <small>{{ slicestr .date 0 4 }}</small>
+        </div>
+      </div>
+
+      </div>
       {{ end }}
     </ul>
   </div>
