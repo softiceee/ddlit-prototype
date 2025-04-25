@@ -20,6 +20,11 @@ markup:
     renderer:
       unsafe: true # Allows you to write raw html in your md files
 
+sitemap:
+  changefreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
 caches:
   images:
     dir: :cacheDir/images
