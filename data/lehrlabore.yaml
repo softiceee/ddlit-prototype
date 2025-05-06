@@ -1,0 +1,15 @@
+- title: First Feature
+  icon: laptop-globe
+  text: Description of the first feature
+  url: /features/first
+  buttonText: Learn More
+- title: Second Feature
+  icon: doc-sync
+  text: Description of the second feature
+  url: /features/second
+  buttonText: Get Started
+- title: Third Feature
+  icon: mobile-feed
+  text: Description of the third feature
+  url: /features/third
+  buttonText: Explore

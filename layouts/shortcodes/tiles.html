@@ -1,0 +1,59 @@
+{{/* tiles.html shortcode */}}
+{{ $title    := .Get "title" | default "Title" }}
+{{ $subtitle := .Get "subtitle" | default "Subtitle" }}
+{{ $tiles := index .Site.Data (.Get "tiles" | default "") }}
+
+
+{{/* Determine column class based on number of items */}}
+{{ $columnClass := "is-one-third" }}
+{{ $itemCount := len $tiles }}
+{{ if eq $itemCount 1 }}
+  {{ $columnClass = "is-full" }}
+{{ else if eq $itemCount 2 }}
+  {{ $columnClass = "is-half" }}
+{{ else if eq $itemCount 3 }}
+  {{ $columnClass = "is-one-third" }}
+{{ else if eq $itemCount 4 }}
+  {{ $columnClass = "is-one-quarter" }}
+{{ else if eq $itemCount 5 }}
+  {{ $columnClass = "is-one-fifth" }}
+{{ else if eq $itemCount 6 }}
+  {{ $columnClass = "is-one-sixth" }}
+{{ else }}
+  {{ $columnClass = "is-one-quarter" }}
+{{ end }}
+
+<section class="section section-feature-grey is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+
+    <div class="content-wrapper">
+      <div class="columns">
+        {{- range $tiles }}
+        <div class="column {{ $columnClass }}">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>{{ .title }}</h4>
+            </div>
+            <div class="card-icon">
+                <img src="{{ printf "images/illustrations/icons/%s.svg" .icon | relURL }}">
+            </div>
+            <div class="card-text">
+                <p>{{ .text }}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+  </div>
+</section>
