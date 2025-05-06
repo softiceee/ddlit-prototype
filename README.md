@@ -74,11 +74,11 @@ This starts a local webserver which you can access in your browser at `http://lo
 
 There are two branches in this repository:
 - `main`: This is the main branch. This is the "production" branch. It is automatically deployed to the live website. We try to keep this branch stable and only merge changes that are ready for publication.
-- `develop`: This is the development branch. This is where we do our development work. We can merge changes from this branch into the main branch when they are ready for publication. You will always work in this branch.
+- `dev`: This is the development branch. This is where we do our development work. We can merge changes from this branch into the main branch when they are ready for publication. You will always work in this branch.
 
 To checkout the develop branch, run:
 
-```git checkout develop```
+```git checkout dev```
 
 Now, your changes are tracked in the develop branch.
 
