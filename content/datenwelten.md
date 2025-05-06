@@ -65,23 +65,6 @@ Dann komm in die Ringvorlesung Datenwelten!
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-Zahlen Infografik
-
-
-
-
-
 # Inhalte der Ringvorlesung
 
   <section class="section">
@@ -94,39 +77,233 @@ Zahlen Infografik
               Die Vorlesungsreihe beleuchtet Grundlagen von Statistik, Datenanalyse und Machine Learning aus einer technischen Perspektive.
               Das interdisziplinäre Team setzt sich aus Dozierenden der Informatik und den Sozialwissenschaften zusammen. Dabei erlernen Studierende die folgenden Inhalte:
             </p>
-            <ul>
-              <li class="mb-2">
-                <img src="/icons/codicons/debug-disconnect.svg" alt="debug-disconnect" class="icon is-small mr-2">
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/debug-disconnect.svg" alt="debug-disconnect" class="icon is-medium">
+              </div>
+              <div class="column">
                 Funktionsweise der informationstechnischen Datenökosysteme, die in weiten Teilen unseren Alltag (mit-)gestalten
-              </li>
-              <li class="mb-2">
-                <img src="/icons/codicons/cloud-upload.svg" alt="cloud-upload" class="icon is-small mr-2">
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/cloud-upload.svg" alt="cloud-upload" class="icon is-medium">
+              </div>
+              <div class="column">
                 Das technische und soziale Zusammenspiel dieser Systeme bei der Erhebung, Aufbewahrung und Nutzen von Daten
-              </li>
-              <li class="mb-2">
-                <img src="/icons/codicons/graph-scatter.svg" alt="graph-scatter" class="icon is-small mr-2">
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/graph-scatter.svg" alt="graph-scatter" class="icon is-medium">
+              </div>
+              <div class="column">
                 Einfache statistische und visualisierende Verfahren zur explorativen Analyse von Daten
-              </li>
-              <li class="mb-2">
-                <img src="/icons/codicons/debug-alt.svg" alt="debug-alt" class="icon is-small mr-2">
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/debug-alt.svg" alt="debug-alt" class="icon is-medium">
+              </div>
+              <div class="column">
                 Grundlegende Algorithmen des Supervised and Unsupervised Machine Learning (Classification, Regression, Clustering)
-              </li>
-              <li class="mb-2">
-                <img src="/icons/codicons/combine.svg" alt="combine" class="icon is-small mr-2">
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/combine.svg" alt="combine" class="icon is-medium">
+              </div>
+              <div class="column">
                 Elementare Einführung in Neuronale Netze und ihre Anwendungen in der Bild- und Textverarbeitung (Large Language Models)
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
             {{< lecture2go id="70078" series="true" title="Datenwelten I: Einführung in Data Science" width="400" height="300">}}
         </div>
         <div class="column">
-          <h2 class="title is-4">Sommersemester</h2>
-          <p>This is some text content for the second column.</p>
+          <div class="container">
+            <h2 class="title is-4">Im Sommersemester: Datenwelten 2</h2>
+            <p class="mb-4">
+              Im Sommersemester beleuchtet die Vorlesungsreihe Datenwelten 2 gesellschaftliche, politische und wirtschaftliche Zusammenhänge durch die zunehmende Datafizierung und Digitalisierung aus unterschiedlichen Perspektiven. Das interdisziplinäre Team setzt sich aus Dozierenden verschiedener Fakultäten zusammen. Dabei erlernen Studierende die folgenden Inhalte:
+            </p>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/telescope.svg" alt="telescope" class="icon is-medium">
+              </div>
+              <div class="column">
+                Überblick über den aktuellen Stand der Datennutzung und -anwendung in verschiedenen gesellschaftlichen Bereichen wie Politik, Wissenschaft, Bildung und Wirtschaft
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/organization.svg" alt="organization" class="icon is-medium">
+              </div>
+              <div class="column">
+                Kritische Auseinandersetzung mit diesen Datenanwendungen und ihren gesellschaftlichen und ethischen Herausforderungen wie Digital Divide, Bias & Diskriminierung
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/device-camera.svg" alt="device-camera" class="icon is-medium">
+              </div>
+              <div class="column">
+                Auswirkung der zunehmenden Digitalisierung und Datafizierung auf die politische Öffentlichkeit und journalistische Arbeit
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/book.svg" alt="book" class="icon is-medium">
+              </div>
+              <div class="column">
+                Verschiedene Fragestellungen der Digital Humanities und deren Entwicklung im Kontext von Datafizierung und Artificial Intelligence
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/law.svg" alt="law" class="icon is-medium">
+              </div>
+              <div class="column">
+                Möglichkeiten und Grenzen der rechtlichen (Datenschutz) und technischen (IT-Sicherheit) Regulierung von Datennutzung und deren Konsequenzen
+              </div>
+            </div>
+          </div>
           {{< lecture2go id="71422" series="true" title="Datenwelten II: Reflexion der Datenwelten" width="400" height="300">}}
         </div>
       </div>
     </div>
   </section>
+
+
+<section class="section">
+    <div class="container">
+      <!-- First Row: Titles -->
+      <div class="columns is-vcentered mb-5">
+        <div class="column is-half">
+          <h2 class="title is-3">Im Wintersemester: Datenwelten 1</h2>
+        </div>
+        <div class="column is-half">
+          <h2 class="title is-3">Im Sommersemester: Datenwelten 2</h2>
+        </div>
+      </div>
+      <!-- Second Row: Paragraphs -->
+      <div class="columns is-vcentered mb-5">
+        <div class="column is-half">
+          <p class="is-size-5">
+            Die Vorlesungsreihe beleuchtet Grundlagen von Statistik, Datenanalyse und Machine Learning aus einer technischen Perspektive.
+            Das interdisziplinäre Team setzt sich aus Dozierenden der Informatik und den Sozialwissenschaften zusammen. Dabei erlernen Studierende die folgenden Inhalte:
+          </p>
+        </div>
+        <div class="column is-half">
+          <p class="is-size-5">
+            Im Sommersemester beleuchtet die Vorlesungsreihe Datenwelten 2 gesellschaftliche, politische und wirtschaftliche Zusammenhänge durch die zunehmende Datafizierung und Digitalisierung aus unterschiedlichen Perspektiven. Das interdisziplinäre Team setzt sich aus Dozierenden verschiedener Fakultäten zusammen. Dabei erlernen Studierende die folgenden Inhalte:
+          </p>
+        </div>
+      </div>
+      <!-- Third Row: Options Lists -->
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <div class="content">
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/debug-disconnect.svg" alt="debug-disconnect" class="icon is-medium">
+              </div>
+              <div class="column">
+                Funktionsweise der informationstechnischen Datenökosysteme, die in weiten Teilen unseren Alltag (mit-)gestalten
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/cloud-upload.svg" alt="cloud-upload" class="icon is-medium">
+              </div>
+              <div class="column">
+                Das technische und soziale Zusammenspiel dieser Systeme bei der Erhebung, Aufbewahrung und Nutzen von Daten
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/graph-scatter.svg" alt="graph-scatter" class="icon is-medium">
+              </div>
+              <div class="column">
+                Einfache statistische und visualisierende Verfahren zur explorativen Analyse von Daten
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/debug-alt.svg" alt="debug-alt" class="icon is-medium">
+              </div>
+              <div class="column">
+                Grundlegende Algorithmen des Supervised and Unsupervised Machine Learning (Classification, Regression, Clustering)
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/combine.svg" alt="combine" class="icon is-medium">
+              </div>
+              <div class="column">
+                Elementare Einführung in Neuronale Netze und ihre Anwendungen in der Bild- und Textverarbeitung (Large Language Models)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="content">
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/telescope.svg" alt="telescope" class="icon is-medium">
+              </div>
+              <div class="column">
+                Überblick über den aktuellen Stand der Datennutzung und -anwendung in verschiedenen gesellschaftlichen Bereichen wie Politik, Wissenschaft, Bildung und Wirtschaft
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/organization.svg" alt="organization" class="icon is-medium">
+              </div>
+              <div class="column">
+                Kritische Auseinandersetzung mit diesen Datenanwendungen und ihren gesellschaftlichen und ethischen Herausforderungen wie Digital Divide, Bias & Diskriminierung
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/device-camera.svg" alt="device-camera" class="icon is-medium">
+              </div>
+              <div class="column">
+                Auswirkung der zunehmenden Digitalisierung und Datafizierung auf die politische Öffentlichkeit und journalistische Arbeit
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/book.svg" alt="book" class="icon is-medium">
+              </div>
+              <div class="column">
+                Verschiedene Fragestellungen der Digital Humanities und deren Entwicklung im Kontext von Datafizierung und Artificial Intelligence
+              </div>
+            </div>
+            <div class="mb-2 columns is-vcentered">
+              <div class="column is-narrow">
+                <img src="/icons/codicons/law.svg" alt="law" class="icon is-medium">
+              </div>
+              <div class="column">
+                Möglichkeiten und Grenzen der rechtlichen (Datenschutz) und technischen (IT-Sicherheit) Regulierung von Datennutzung und deren Konsequenzen
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth Row: Paragraphs -->
+      <div class="columns is-vcentered mb-5">
+        <div class="column is-half">
+          {{< lecture2go id="70078" series="true" title="Datenwelten I: Einführung in Data Science" width="400" height="300">}}
+        </div>
+        <div class="column is-half">
+          {{< lecture2go id="71422" series="true" title="Datenwelten II: Reflexion der Datenwelten" width="400" height="300">}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
 
 
