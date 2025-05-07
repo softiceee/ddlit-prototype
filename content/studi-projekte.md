@@ -8,3 +8,5 @@ include_footer: true # or false to display the footer
 Test
 
 Test2
+
+Test3
