@@ -7800,9 +7800,12 @@ Color variables
 $primary: #4FC1EA;
 $secondary: #F39200;
 $accent: #00efb7;
+
+
+türkis: 74c5c9
 */
 /* last section background -> hier uni light grey */
-/* footer: könnte man auch 22366f nehmen*/
+/* footer: könnte man auch 22366f nehmen test*/
 /* ==========================================================================
 Navbar
 ========================================================================== */
@@ -8132,8 +8135,8 @@ Classes to change the feel of bulma buttons
 
 .button.button.accent-btn {
   outline: none;
-  border-color: #74c5c9;
-  background-color: #74c5c9;
+  border-color: #c2c747;
+  background-color: #c2c747;
   color: #fff;
   transition: all 0.5s; }
   .button.button.accent-btn:hover {
@@ -8142,12 +8145,12 @@ Classes to change the feel of bulma buttons
     box-shadow: 0 14px 26px -12px rgba(104, 187, 136, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(104, 187, 136, 0.2) !important;
     opacity: 0.8; }
   .button.button.accent-btn.btn-outlined {
-    border-color: #74c5c9;
-    color: #74c5c9;
+    border-color: #c2c747;
+    color: #c2c747;
     background-color: transparent; }
     .button.button.accent-btn.btn-outlined:hover {
       color: #fff;
-      background-color: #74c5c9; }
+      background-color: #c2c747; }
 
 /*! _cards.scss v1.0.0 | Commercial License | built on top of bulma.io/Bulmax */
 /* ==========================================================================
@@ -8200,7 +8203,7 @@ Cards and Card content styles
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.secondary {
     background-color: #e68935; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.accent {
-    background-color: #74c5c9; }
+    background-color: #c2c747; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header ul li a {
     color: #f2f2f2; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header ul li.is-active a {
@@ -8236,9 +8239,9 @@ input.input {
     input.input.is-secondary-focus:focus ~ span.icon i {
       color: #e68935; }
   input.input.is-accent-focus:focus {
-    border-color: #74c5c9; }
+    border-color: #c2c747; }
     input.input.is-accent-focus:focus ~ span.icon i {
-      color: #74c5c9; }
+      color: #c2c747; }
   input.input.is-bloody-focus:focus {
     border-color: #FC354C; }
     input.input.is-bloody-focus:focus ~ span.icon i {

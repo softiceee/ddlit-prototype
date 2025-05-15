@@ -1,0 +1,32 @@
+{{ $bgColor := .Get "bgcolor" | default "primary" }}
+{{ $textColor := .Get "textcolor" | default "secondary" }}
+{{ $iconPath := .Get "iconpath" | default "/icons/" }}
+{{ $jsonFile := .Get "datafile" | default "statcounters/stats1" }}
+{{ $items := index site.Data $jsonFile }}
+
+
+<div class="stat-counters has-text-centered py-6 has-background-{{ $bgColor }}">
+  <div class="container">
+    <div class="columns is-multiline is-centered">
+      {{ range $index, $item := $items }}
+        <div class="column is-full-mobile is-8-tablet is-6-desktop mb-5 {{ if eq (mod $index 2) 0 }}has-text-right-tablet{{ else }}has-text-left-tablet{{ end }}">
+          <div class="is-flex is-align-items-center is-justify-content-center {{ if eq (mod $index 2) 0 }}is-justify-content-flex-end-tablet{{ else }}is-justify-content-flex-start-tablet{{ end }}">
+            {{ if eq (mod $index 2) 1 }}<div class="pr-3">
+              <img src="{{ $iconPath }}{{ $item.icon }}" alt="{{ $item.iconAlt }}" width="64">
+            </div>{{ end }}
+            <div class="{{ if eq (mod $index 2) 0 }}pr-3{{ else }}pl-3{{ end }}">
+              <div class="is-size-1 has-text-weight-bold has-text-{{ $textColor }}">
+                <span>{{ $item.prefix }}</span>
+                <span class="is-size-2">{{ $item.number }}</span>
+              </div>
+              <div class="is-size-2 has-text-{{ $textColor }}">{{ $item.text }}</div>
+            </div>
+            {{ if eq (mod $index 2) 0 }}<div>
+              <img src="{{ $iconPath }}{{ $item.icon }}" alt="{{ $item.iconAlt }}" width="64">
+            </div>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

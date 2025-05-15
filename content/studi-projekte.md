@@ -1,8 +1,16 @@
 ---
 title: Studierendenprojekte
-sidebar: true # or false to display the sidebar
-sidebarlogo: fresh-white-alt # From (static/images/logo/)
 include_footer: true # or false to display the footer
 ---
 
 # Header
+
+Test
+
+Test2
+
+Test3
+
+Test4
+
+Test5

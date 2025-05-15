@@ -1,0 +1,45 @@
+{{/* projectblock.html shortcde */}}
+{{ $title := .Get "title" | default "Project Title" }}
+{{ $text := .Get "text" | default "Project description goes here." }}
+{{ $list := .Params.list | default (slice) }}
+
+
+{{ $tiles := index .Site.Data (.Get "tiles" | default "") }}
+
+
+
+<div class="columns is-vcentered is-multiline">
+    <!-- Left Column -->
+    <div class="column is-half">
+      <h2 class="title is-3">
+        {{ .Get "title" }}
+      </h2>
+  
+      <p class="mb-5">
+        {{ .Get "text" }}
+      </p>
+  
+      <figure class="image is-4by3 has-background-warning-light">
+        <div class="has-text-centered" style="height:100%; display:flex; align-items:center; justify-content:center;">
+          <span class="is-size-3 has-text-grey-light">Bild</span>
+        </div>
+      </figure>
+    </div>
+  
+    <!-- Right Column -->
+    <div class="column is-half">
+      <h3 class="title is-4">Passende Aufzählung:</h3>
+      <ul>
+        {{ range $index, $item := .Params.list }}
+        <li class="mb-4">
+          👉 {{ $item }}
+        </li>
+        {{ end }}
+      </ul>
+  
+      <div class="mt-5">
+        <div class="tag is-warning is-medium is-rounded">Icon</div>
+      </div>
+    </div>
+  </div>
+  

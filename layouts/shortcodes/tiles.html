@@ -1,7 +1,28 @@
-{{- $section1 := .Site.Params.section1 }}
-{{- $title    := index $section1 "title" }}
-{{- $subtitle := index $section1 "subtitle" }}
-{{- $tiles    := index $section1 "tiles" }}
+{{/* tiles.html shortcode */}}
+{{ $title    := .Get "title" | default "Title" }}
+{{ $subtitle := .Get "subtitle" | default "Subtitle" }}
+{{ $tiles := index .Site.Data (.Get "tiles" | default "") }}
+
+
+{{/* Determine column class based on number of items */}}
+{{ $columnClass := "is-one-third" }}
+{{ $itemCount := len $tiles }}
+{{ if eq $itemCount 1 }}
+  {{ $columnClass = "is-full" }}
+{{ else if eq $itemCount 2 }}
+  {{ $columnClass = "is-half" }}
+{{ else if eq $itemCount 3 }}
+  {{ $columnClass = "is-one-third" }}
+{{ else if eq $itemCount 4 }}
+  {{ $columnClass = "is-one-quarter" }}
+{{ else if eq $itemCount 5 }}
+  {{ $columnClass = "is-one-fifth" }}
+{{ else if eq $itemCount 6 }}
+  {{ $columnClass = "is-one-sixth" }}
+{{ else }}
+  {{ $columnClass = "is-one-quarter" }}
+{{ end }}
+
 <section class="section section-feature-grey is-medium" id="section1">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -10,10 +31,11 @@
       <div class="divider is-centered"></div>
     </div>
 
+
     <div class="content-wrapper">
       <div class="columns">
         {{- range $tiles }}
-        <div class="column is-one-fourth">
+        <div class="column {{ $columnClass }}">
           <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
             <div class="card-title">
               <h4>{{ .title }}</h4>
@@ -32,5 +54,6 @@
         {{- end }}
       </div>
     </div>
+
   </div>
 </section>
