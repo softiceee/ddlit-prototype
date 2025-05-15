@@ -3,7 +3,7 @@ title: Ringvorlesung Datenwelten
 include_footer: true # or false to display the footer
 ---
 
-Test
+Test2
 
 <section class="section">
   <div class="container">
@@ -17,6 +17,9 @@ Test
         <h1 class="title is-3">Sprechender Titel</h1>
         <div class="content">
           <p class="is-size-5">
+            Du bist neugierig auf Daten und ihre Bedeutung für unsere Gesellschaft?
+            Du möchtest mehr über die Funktionsweise von datengetriebenen Systemen erfahren?
+            
 Du wolltest schon immer mal...
 Dir brummt der Kopf?
 Dann komm in die Ringvorlesung Datenwelten!
